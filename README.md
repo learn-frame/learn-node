@@ -1,2 +1,3 @@
-# laern-node
+# learn-node
+
 Learn Node.js
