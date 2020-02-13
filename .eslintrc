@@ -4,7 +4,7 @@
     "node": true,
     "jest": true
   },
-  "extends": ["airbnb-base"],
+  "extends": ["airbnb-base", "plugin:@typescript-eslint/recommended"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -19,6 +19,7 @@
     "semi": "off",
     "indent": "off",
     "no-tabs": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
   }
 }
