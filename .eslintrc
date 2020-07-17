@@ -1,10 +1,9 @@
 {
   "env": {
     "es6": true,
-    "node": true,
-    "jest": true
+    "node": true
   },
-  "extends": ["airbnb-base", "plugin:@typescript-eslint/recommended"],
+  "extends": ["airbnb-base"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -17,9 +16,15 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "semi": "off",
-    "indent": "off",
-    "no-tabs": "off",
     "no-console": "off",
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "import/extensions": "off",
+    "no-unused-vars": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }
